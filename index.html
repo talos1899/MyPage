@@ -206,7 +206,7 @@ footer b{color:var(--muted);font-weight:600}
       
       <!-- ⚠️ 这里就是你的照片！请把 src 换成你实际的照片文件名 -->
       <div class="hero-avatar">
-        <img src="images/avatar.jpg" alt="段志超">
+        <img src="images/pic2.webp" alt="段志超">
       </div>
       
     </div>
@@ -339,7 +339,7 @@ footer b{color:var(--muted);font-weight:600}
     <div class="skills-grid">
       <div class="skill-card reveal"><div class="skill-head"><div class="skill-ico">🔬</div><div class="skill-title">材料表征</div></div><div class="skill-tags"><span>XRD 物相分析</span><span>SEM 微观形貌</span><span>断面失效分析</span><span>TG-DSC 热分析</span><span>UV-Vis</span><span>万能试验机</span></div></div>
       <div class="skill-card reveal"><div class="skill-head"><div class="skill-ico">⚗️</div><div class="skill-title">材料制备</div></div><div class="skill-tags"><span>多组分粉体配料</span><span>球磨细化</span><span>高温熔融与退火</span><span>干压成型与烧结</span><span>陶瓷/水泥成型养护</span><span>化学滴定</span></div></div>
-      <div class="skill-card reveal"><div class="skill-head"><div class="skill-ico">🔋</div><div class="skill-title">电化学（自修）</div></div><div class="skill-tags"><span>能斯特方程</span><span>极化</span><span>三电极体系</span><span>锂离子电池基础</span></div></div>
+      <div class="skill-card reveal"><div class="skill-head"><div class="skill-ico">🔋</div><div class="skill-title">电化学</div></div><div class="skill-tags"><span>能斯特方程</span><span>极化</span><span>三电极体系</span><span>锂离子电池基础</span></div></div>
       <div class="skill-card reveal"><div class="skill-head"><div class="skill-ico">💻</div><div class="skill-title">数据分析与编程</div></div><div class="skill-tags"><span>Python（93分）</span><span>Origin 绘图拟合</span><span>Excel 大批量数据</span><span>提示词工程</span><span>知识蒸馏</span><span>AI 工作流设计</span><span>多因素权重建模</span></div></div>
       <div class="skill-card reveal"><div class="skill-head"><div class="skill-ico">🌐</div><div class="skill-title">语言</div></div><div class="skill-tags"><span>中文（母语）</span><span>英语 CET-6</span><span>可阅读英文技术文献</span></div></div>
       <div class="skill-card reveal"><div class="skill-head"><div class="skill-ico">🧠</div><div class="skill-title">通用能力</div></div><div class="skill-tags"><span>复杂知识拆解</span><span>技术文档撰写</span><span>失效案例库搭建</span><span>参数扫描→表征→迭代</span><span>成本结构分析</span><span>数字化痛点诊断</span></div></div>
@@ -377,7 +377,7 @@ footer b{color:var(--muted);font-weight:600}
   </div>
 </section>
 
-<footer><div class="container">© 2026 <b>段志超</b> · 华南理工大学材料科学与工程 · 由 GitHub Pages 托管</div></footer>
+<footer><div class="container">© 2026 <b>段志超</b> · 华南理工大学材料科学与工程 · 由 GitHub托管</div></footer>
 
 <script>
 (function(){const canvas=document.getElementById('particles');const ctx=canvas.getContext('2d');let w,h,particles=[];const COUNT=window.innerWidth<768?36:84;function resize(){w=canvas.width=window.innerWidth;h=canvas.height=window.innerHeight}resize();window.addEventListener('resize',resize);for(let i=0;i<COUNT;i++){particles.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.28,vy:(Math.random()-.5)*.28,r:Math.random()*1.5+.4})}function draw(){ctx.clearRect(0,0,w,h);for(let i=0;i<particles.length;i++){const p=particles[i];p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle='rgba(150,158,255,.45)';ctx.fill()}for(let i=0;i<particles.length;i++){for(let j=i+1;j<particles.length;j++){const dx=particles[i].x-particles[j].x;const dy=particles[i].y-particles[j].y;const d=Math.sqrt(dx*dx+dy*dy);if(d<120){ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle='rgba(130,140,255,'+(1-d/120)*.11+')';ctx.stroke()}}}requestAnimationFrame(draw)}draw()})();
